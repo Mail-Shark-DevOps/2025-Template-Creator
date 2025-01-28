@@ -1,0 +1,32 @@
+{
+  "name": "2025-template-creator",
+  "version": "0.0.1",
+  "description": "A revamped version of the 2019 Templates (Electron) (Yarn) project created by Todd and last modified by Matt. This version addresses the issue of the application no longer running due to a newer version of Electron being needed and the way that electron apps are handled (with middleware) changing how this app fundamentally works",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mail-Shark-DevOps/2025-Template-Creator.git"
+  },
+  "keywords": [
+    "Templates",
+    "template-creator",
+    "design-templates",
+    "design",
+    "mailshark-templates",
+    "mailshark-design-templates"
+  ],
+  "author": "awesomebunny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mail-Shark-DevOps/2025-Template-Creator/issues"
+  },
+  "homepage": "https://github.com/Mail-Shark-DevOps/2025-Template-Creator#readme",
+  "devDependencies": {
+    "electron": "^34.0.1",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
