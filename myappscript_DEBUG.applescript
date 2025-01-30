@@ -387,10 +387,11 @@ try
 		-- Remove current file
 		delete aFile
 	end tell
-	return "done"
+	return "Completed!"
 on error err
 	display dialog err
 end try
+return "Completed!"
 end run
 
 on findChangeText(fromText, toText)
