@@ -10,12 +10,58 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <title>Template Creator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋 Heyo! It's-a me!</p>
-    <p id="info"></p>
+    <div id="loading-fill">
+        <div id="loading-div">
+            <p class="p-text" id="preparing-text">Preparing...</p>
+            <p id="loaded-text" class="p-text link-text">Opening InDesign...</p>
+        </div>
+      </div>
+      <div id="content">
+  
+          <div id="stage-one">
+              <h5>Year:</h5>
+              <select id="date" class="ui-elem">
+                <option value="none">None</option>
+              </select>
+              <h5>Website:</h5>
+              <input class="text-input ui-elem" type="text" id="website" value="www.GoMailShark.com"/><br>
+              <h5>Phone:</h5>
+              <input class="text-input ui-elem" type="text" id="phone" value="484-652-7990"/><br>
+              <h5>Indecia Line 1:</h5>
+              <input class="text-input ui-elem" type="text" id="indecia1" value="PRST STD"/><br>
+              <h5>Indecia Line 2:</h5>
+              <input class="text-input ui-elem" type="text" id="indecia2" value="US POSTAGE PAID"/><br>
+              <h5>Indecia Line 3:</h5>
+              <input class="text-input ui-elem" ype="text" id="indecia3" value="READING, PA"/><br>
+              <h5>Indecia Line 4:</h5>
+              <input class="text-input ui-elem" type="text" id="indecia4" value="PERMIT #412"/><br>
+              <button id="btn-stage-two" class="my-buttons btn-cta">Next</button>
+          </div>
+        <div id="stage-two-overflow">
+          <div id="stage-two">
+            <!-- <input id="target-folder" name="folder" type="file" class="inputfile"  webkitdirectory />
+            <label for="target-folder" class="my-buttons btn-cta" id="folder-label">Choose a folder</label> -->
+            <button id="target-folder" class="my-buttons btn-cta">Choose a folder</button>
+            <button id="btn-stage-one" class="my-buttons">Back</button>
+          </div>
+        </div>
+        <div id="stage-three-overflow">
+          <div id="stage-three">
+            <p id="status" class="p-text">Click create to start!</p>
+            <div id="progress-container">
+              <div id="progress-bar"></div>
+            </div>
+            <p id="folder-path" class="p-text"></p>
+            <button id="btn-create" class="my-buttons btn-cta">Create!</button>
+            <button id="btn-stage-two-again" class="my-buttons">Back</button>
+          </div>
+        </div>
+      </div>
   </body>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./renderer.js"></script>
 </html>
